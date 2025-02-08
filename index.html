@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God Images Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            color: #333;
+        }
+        .folder {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+        .folder img {
+            width: 100px;
+            height: 100px;
+        }
+        .gallery {
+            display: none;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function showGallery(folder) {
+            document.querySelectorAll('.gallery').forEach(gallery => {
+                gallery.style.display = 'none';
+            });
+            document.getElementById(folder).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Gods Image Gallery</h1>
+
+    <div>
+        <div class="folder" onclick="showGallery('shiva-parvati')">
+            <img src="images/Lordshiv1.jpg" alt="Shiva Parvati">
+            <p>Lord Shiva Parvati</p>
+        </div>
+        <div class="folder" onclick="showGallery('radha-krishna')">
+            <img src="images/Radhakrisha7.jpg" alt="Radha Krishna">
+            <p>Radha Krishna</p>
+        </div>
+        <div class="folder" onclick="showGallery('ram-sita')">
+            <img src="images/Ramsiya7.jpg" alt="Ram Sita">
+            <p>Ram Sita</p>
+        </div>
+        <div class="folder" onclick="showGallery('laxmi-narayan')">
+            <img src="images/Laxminarayan6.jpg" alt="Laxmi Narayan">
+            <p>Laxmi Narayan</p>
+        </div>
+    </div>
+
+    <!-- Shiva Parvati Gallery -->
+    <div id="shiva-parvati" class="gallery">
+        <h2>Lord Shiva Parvati</h2>
+        <a href="images/Lordshiva.jpg" download><img src="images/Lordshiva.jpg" alt="Shiva Image"></a>
+        <a href="images/Lordshiva2.jpg" download><img src="images/Lordshiva2.jpg" alt="Shiva Image"></a>
+		<a href="images/Lordshiva3.jpg" download><img src="images/Lordshiva3.jpg" alt="Shiva Image"></a>
+		<a href="images/Lordshiva4.jpg" download><img src="images/Lordshiva4.jpg" alt="Shiva Image"></a>
+		<a href="images/Lordshiva5.jpg" download><img src="images/Lordshiva5.jpg" alt="Shiva Image"></a>
+		<a href="images/Lordshiva6.jpg" download><img src="images/Lordshiva6.jpg" alt="Shiva Image"></a>
+		<a href="images/Lordshiva7.jpg" download><img src="images/Lordshiva7.jpg" alt="Shiva Image"></a>
+		<a href="images/Lordshiva8.jpg" download><img src="images/Lordshiva8.jpg" alt="Shiva Image"></a>
+		<a href="images/Lordshiva9.jpg" download><img src="images/Lordshiva9.jpg" alt="Shiva Image"></a>
+		<a href="images/Lordshiva10.jpg" download><img src="images/Lordshiva10.jpg" alt="Shiva Image"></a>
+		
+    </div>
+
+    <!-- Radha Krishna Gallery -->
+    <div id="radha-krishna" class="gallery">
+        <h2>Radha Krishna</h2>
+        <a href="images/Radhakrisha.jpg" download><img src="images/Radhakrisha.jpg" alt="Radha Krishna Image"></a>
+        <a href="images/Radhakrisha1.jpg" download><img src="images/Radhakrisha1.jpg" alt="Radha Krishna Image"></a>
+		<a href="images/Radhakrisha2.jpg" download><img src="images/Radhakrisha2.jpg" alt="Radha Krishna Image"></a>
+		<a href="images/Radhakrisha3.jpg" download><img src="images/Radhakrisha3.jpg" alt="Radha Krishna Image"></a>
+		<a href="images/Radhakrisha4.jpg" download><img src="images/Radhakrisha4.jpg" alt="Radha Krishna Image"></a>
+		<a href="images/Radhakrisha5.jpg" download><img src="images/Radhakrisha5.jpg" alt="Radha Krishna Image"></a>
+		<a href="images/Radhakrisha6.jpg" download><img src="images/Radhakrisha6.jpg" alt="Radha Krishna Image"></a>
+		<a href="images/Radhakrisha7.jpg" download><img src="images/Radhakrisha7.jpg" alt="Radha Krishna Image"></a>
+		<a href="images/Radhakrisha8.jpg" download><img src="images/Radhakrisha8.jpg" alt="Radha Krishna Image"></a>
+		<a href="images/Radhakrisha9.jpg" download><img src="images/Radhakrisha9.jpg" alt="Radha Krishna Image"></a>
+    </div>
+
+    <!-- Ram Sita Gallery -->
+    <div id="ram-sita" class="gallery">
+        <h2>Ram Sita</h2>
+        <a href="images/Ramsiya.jpg" download><img src="images/Ramsiya.jpg" alt="Ram Sita Image"></a>
+        <a href="images/Ramsiya1.jpg" download><img src="images/Ramsiya1.jpg" alt="Ram Sita Image"></a>
+		<a href="images/Ramsiya2.jpg" download><img src="images/Ramsiya2.jpg" alt="Ram Sita Image"></a>
+		<a href="images/Ramsiya3.jpg" download><img src="images/Ramsiya3.jpg" alt="Ram Sita Image"></a>
+		<a href="images/Ramsiya4.jpg" download><img src="images/Ramsiya4.jpg" alt="Ram Sita Image"></a>
+		<a href="images/Ramsiya5.jpg" download><img src="images/Ramsiya5.jpg" alt="Ram Sita Image"></a>
+		<a href="images/Ramsiya6.jpg" download><img src="images/Ramsiya6.jpg" alt="Ram Sita Image"></a>
+		<a href="images/Ramsiya7.jpg" download><img src="images/Ramsiya7.jpg" alt="Ram Sita Image"></a>
+		<a href="images/Ramsiya8.jpg" download><img src="images/Ramsiya8.jpg" alt="Ram Sita Image"></a>
+		<a href="images/Ramsiya9.jpg" download><img src="images/Ramsiya9.jpg" alt="Ram Sita Image"></a>
+		
+    </div>
+
+    <!-- Laxmi Narayan Gallery -->
+    <div id="laxmi-narayan" class="gallery">
+        <h2>Laxmi Narayan</h2>
+        <a href="images/Laxminarayan.jpg" download><img src="images/Laxminarayan.jpg" alt="Laxmi Narayan Image"></a>
+        <a href="images/Laxminarayan1.jpg" download><img src="images/Laxminarayan1.jpg" alt="Laxmi Narayan Image"></a>
+		<a href="images/Laxminarayan2.jpg" download><img src="images/Laxminarayan2.jpg" alt="Laxmi Narayan Image"></a>
+		<a href="images/Laxminarayan3.jpg" download><img src="images/Laxminarayan3.jpg" alt="Laxmi Narayan Image"></a>
+		<a href="images/Laxminarayan4.jpg" download><img src="images/Laxminarayan4.jpg" alt="Laxmi Narayan Image"></a>
+		<a href="images/Laxminarayan5.jpg" download><img src="images/Laxminarayan5.jpg" alt="Laxmi Narayan Image"></a>
+		<a href="images/Laxminarayan6.jpg" download><img src="images/Laxminarayan6.jpg" alt="Laxmi Narayan Image"></a>
+    </div>
+
+</body>
+</html>
